@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: webrtc-signaling-server
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python signaling_server.py
